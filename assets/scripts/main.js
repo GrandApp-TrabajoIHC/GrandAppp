@@ -175,7 +175,7 @@ function setupRegistroValidation() {
       else i.checked = false;
     });
     alert('Cuenta creada correctamente (simulado).');
-    window.location.href = 'index.html';
+    window.location.href = 'page-login.html';
   });
 }
 
@@ -244,7 +244,7 @@ function setupLoginValidation() {
       if (i.type !== 'checkbox') i.value = '';
       else i.checked = false;
     });
-    window.location.href = 'index.html';
+    window.location.href = 'page-panel.html';
   });
 }
 
