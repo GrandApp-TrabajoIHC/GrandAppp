@@ -1,4 +1,3 @@
-
 function isEmailValid(email) {
 
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -176,6 +175,7 @@ function setupRegistroValidation() {
       else i.checked = false;
     });
     alert('Cuenta creada correctamente (simulado).');
+    window.location.href = 'page-index.html';
   });
 }
 
@@ -213,6 +213,7 @@ function setupLoginValidation() {
       const type = inputPassword.getAttribute('type') === 'password' ? 'text' : 'password';
       inputPassword.setAttribute('type', type);
       toggle.setAttribute('aria-pressed', type === 'text' ? 'true' : 'false');
+      toggle.textContent = type === 'text' ? 'Ocultar contraseña' : 'Mostrar contraseña';
     });
   }
 
@@ -243,6 +244,7 @@ function setupLoginValidation() {
       if (i.type !== 'checkbox') i.value = '';
       else i.checked = false;
     });
+    window.location.href = 'page-index.html';
   });
 }
 

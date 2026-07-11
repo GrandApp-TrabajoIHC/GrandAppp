@@ -162,6 +162,14 @@ body { background:#F0F8FF; }
     display:inline-block;
     margin-bottom:16px;
   }
+#page-index .risk-dot {
+    display:inline-block;
+    width:8px;
+    height:8px;
+    background:#FFFFFF;
+    border-radius:50%;
+    margin-right:6px;
+  }
 #page-index .adherence-label { font-size:12px; color:#51637B; margin-bottom:6px; font-weight:500; }
 #page-index .bar-bg {
     width:100%;
@@ -2260,4 +2268,39 @@ body { background:#F0F8FF; }
     transform:scale(0.71);
     transform-origin:top left;
   }
+}
+
+/*  Enlaces de sesión */
+
+/* "Cerrar sesion" */
+a.btn-profile-gray.logout-link {
+  text-decoration:none;
+  margin-left:10px;
+}
+
+/* Bitácora: back-btn  */
+#page-bitacora a.back-btn {
+  text-decoration:none;
+}
+#page-bitacora .header-right {
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+#page-bitacora .logout-link {
+  font-size:12px;
+  color:#51637B;
+  text-decoration:none;
+}
+
+/* Login: boton de mostrar/ocultar contraseña */
+#page-login .toggle-password {
+  background:none;
+  border:none;
+  font-size:12px;
+  color:#2371D7;
+  margin-top:4px;
+  cursor:pointer;
+  padding:0;
+  display:block;
 }

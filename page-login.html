@@ -8,7 +8,7 @@
 </head>
 <body id="page-login">
   <div class="frame">
-    <section class="card" aria-labelledby="login-heading">
+    <form class="card" action="#" method="post" novalidate aria-labelledby="login-heading">
       <h1 id="login-heading" class="heading">Iniciar sesión</h1>
 
       <div class="logo" aria-hidden="true">GP</div>
@@ -21,6 +21,7 @@
       <label class="field">
         <span class="label">Contraseña</span>
         <input type="password" name="password" placeholder="Contraseña" required />
+        <button type="button" class="toggle-password">Mostrar contraseña</button>
       </label>
 
       <div class="row">
@@ -30,7 +31,7 @@
       <button class="btn" type="submit">Ingresar</button>
 
       <p class="foot">¿No tienes cuenta? <a href="page-registro.html">Regístrate</a></p>
-    </section>
+    </form>
   </div>
 
   <script src="assets/scripts/main.js" defer></script>
