@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Llamada rápida | GrandAPP</title>
+
+    <link rel="stylesheet" href="assets/styles/styles_llamada.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <a href="index.html" class="marca">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo"
+                >
+            </a>
+
+            <nav class="navegacion">
+
+                <a href="recordatorio.html">
+                    Recordatorio de<br>
+                    medicinas
+                </a>
+
+                <a href="registro.html">
+                    Registro de estado<br>
+                    emocional
+                </a>
+
+                <a
+                    href="#llamada"
+                    class="nav-activo"
+                >
+                    Llamada rápida
+                </a>
+
+            </nav>
+
+            <a href="perfil.html" class="boton boton-perfil">
+                Mi Perfil
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- LLAMADA RÁPIDA -->
+        <section class="seccion-ayuda" id="llamada-rapida">
+            <div class="contenedor">
+
+                <div class="encabezado-seccion">
+
+                    <h1>Llamada rápida</h1>
+
+                    <p>
+                        Solicita ayuda inmediata y alerta a tus contactos de
+                        emergencia cuando lo necesites.
+                    </p>
+
+                </div>
+
+
+                <!-- BOTÓN DE AYUDA -->
+                <div class="bloque-ayuda">
+
+                    <button
+                        type="button"
+                        class="boton-ayuda"
+                        id="botonAyuda"
+                        aria-label="Mantener presionado para pedir ayuda"
+                    >
+                        <img
+                            src="assets/images/boton_ayuda.png"
+                            alt="Pedir ayuda"
+                        >
+                    </button>
+
+
+                    <p class="mensaje-alerta">
+                        La alerta será enviada a tus contactos registrados.
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="boton-cancelar"
+                        id="botonCancelar"
+                    >
+                        Cancelar
+                    </button>
+
+                </div>
+
+
+                <!-- CONTACTOS DE EMERGENCIA -->
+                <section class="panel-contactos">
+
+                    <div class="encabezado-panel">
+
+                        <h2>Contactos de Emergencia</h2>
+
+                        <p>
+                            Estos contactos recibirán una alerta SMS y tu
+                            ubicación cuando actives el botón de ayuda.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contactos-grid">
+
+                        <!-- CONTACTO 1 -->
+                        <article class="tarjeta-contacto">
+
+                            <div
+                                class="icono-persona"
+                                aria-hidden="true"
+                            >
+                                <span class="cabeza"></span>
+                                <span class="cuerpo"></span>
+                            </div>
+
+
+                            <div class="informacion-contacto">
+
+                                <h3>Juan</h3>
+
+                                <p>Hijo</p>
+
+                                <strong>+51 946277590</strong>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- CONTACTO 2 -->
+                        <article class="tarjeta-contacto">
+
+                            <div
+                                class="icono-persona"
+                                aria-hidden="true"
+                            >
+                                <span class="cabeza"></span>
+                                <span class="cuerpo"></span>
+                            </div>
+
+
+                            <div class="informacion-contacto">
+
+                                <h3>Serenazgo</h3>
+
+                                <p>Emergencia</p>
+
+                                <strong>105/0800</strong>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+
+                    <a
+                        href="perfil.html"
+                        class="boton boton-editar-contactos"
+                    >
+                        Editar contactos de Emergencia
+                    </a>
+
+                </section>
+
+
+                <!-- MENSAJE AL ESPECIALISTA -->
+                <section class="panel-mensaje">
+
+                    <label for="mensajeEspecialista">
+                        Envía un mensaje para contactar a tu especialista
+                        <span>
+                            (Esto abrirá un chat directo con tu encargado de salud)
+                        </span>
+                    </label>
+
+
+                    <div class="contenedor-mensaje">
+
+                        <textarea
+                            id="mensajeEspecialista"
+                            name="mensajeEspecialista"
+                            placeholder="En que te puede ayudar tu encargado ..."
+                        ></textarea>
+
+
+                        <button
+                            type="button"
+                            class="boton-audio"
+                            aria-label="Grabar mensaje de voz"
+                        >
+                            <span>O graba un mensaje de voz</span>
+
+                            <span class="flecha">→</span>
+
+                            <img
+                                src="assets/images/audio.png"
+                                alt="Grabar mensaje de voz"
+                            >
+                        </button>
+
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="boton boton-enviar"
+                    >
+                        Enviar
+                    </button>
+
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+
+            <div class="footer-marca">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo-footer"
+                >
+
+                <p class="footer-descripcion">
+                    Cuidando la salud física y emocional<br>
+                    de los adultos mayores.
+                </p>
+
+                <p class="derechos">
+                    © 2026 GrandAPP. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contacto">
+
+                <p>contacto@grandapp.pe</p>
+                <p>+51 999 999 999</p>
+                <p>Lima - Perú</p>
+
+            </div>
+
+
+            <div class="footer-redes">
+
+                <h3>Síguenos:</h3>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                    <li>X Twitter</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        const botonAyuda = document.getElementById("botonAyuda");
+        const botonCancelar = document.getElementById("botonCancelar");
+
+        let temporizadorAyuda;
+        let alertaActivada = false;
+
+        function comenzarPresionado() {
+            botonAyuda.classList.add("presionando");
+
+            temporizadorAyuda = setTimeout(function () {
+                alertaActivada = true;
+                botonAyuda.classList.remove("presionando");
+                botonAyuda.classList.add("alerta-activa");
+
+                alert(
+                    "Alerta enviada a tus contactos de emergencia."
+                );
+            }, 3000);
+        }
+
+        function detenerPresionado() {
+            clearTimeout(temporizadorAyuda);
+            botonAyuda.classList.remove("presionando");
+        }
+
+        botonAyuda.addEventListener(
+            "mousedown",
+            comenzarPresionado
+        );
+
+        botonAyuda.addEventListener(
+            "mouseup",
+            detenerPresionado
+        );
+
+        botonAyuda.addEventListener(
+            "mouseleave",
+            detenerPresionado
+        );
+
+        botonAyuda.addEventListener(
+            "touchstart",
+            function (evento) {
+                evento.preventDefault();
+                comenzarPresionado();
+            }
+        );
+
+        botonAyuda.addEventListener(
+            "touchend",
+            detenerPresionado
+        );
+
+        botonCancelar.addEventListener("click", function () {
+            clearTimeout(temporizadorAyuda);
+
+            botonAyuda.classList.remove(
+                "presionando",
+                "alerta-activa"
+            );
+
+            if (alertaActivada) {
+                alert("La alerta ha sido cancelada.");
+            }
+
+            alertaActivada = false;
+        });
+    </script>
+
+</body>
+</html>

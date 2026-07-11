@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Recordatorio de medicinas | GrandAPP</title>
+
+    <link rel="stylesheet" href="assets/styles/styles_recordatorio.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <a href="index.html" class="marca">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo"
+                >
+            </a>
+
+            <nav class="navegacion">
+
+                <a
+                    href="#recordatorio"
+                    class="nav-activo"
+                >
+                    Recordatorio de<br>
+                    medicinas
+                </a>
+
+                <a href="registro.html">
+                    Registro de estado<br>
+                    emocional
+                </a>
+
+                <a href="llamada.html">
+                    Llamada rápida
+                </a>
+
+            </nav>
+
+            <a href="perfil.html" class="boton boton-perfil">
+                Mi Perfil
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="seccion recordatorios" id="recordatorios">
+            <div class="contenedor">
+
+                <div class="encabezado-seccion">
+
+                    <h1>Recordatorio de medicinas</h1>
+
+                    <p>
+                        Consulta y administra fácilmente los horarios de tus
+                        medicinas.
+                    </p>
+
+                </div>
+
+
+                <div class="panel-recordatorios">
+
+                    <!-- RECORDATORIOS DE HOY -->
+                    <div class="fila-recordatorio fila-hoy">
+
+                        <div class="fecha-recordatorio">
+                            <h2>Hoy: Lunes 27 de mayo</h2>
+                        </div>
+
+
+                        <article class="tarjeta-medicina">
+
+                            <h3>3:00 pm</h3>
+
+                            <p class="nombre-medicina">
+                                Ketorolaco
+                            </p>
+
+                            <p class="dosis">
+                                1 pastilla
+                            </p>
+
+                            <button
+                                type="button"
+                                class="estado estado-tomada"
+                            >
+                                Tomada
+                            </button>
+
+                        </article>
+
+
+                        <article class="tarjeta-medicina">
+
+                            <h3>5:00 pm</h3>
+
+                            <p class="nombre-medicina">
+                                Paracetamol
+                            </p>
+
+                            <p class="dosis">
+                                1 pastilla
+                            </p>
+
+                            <button
+                                type="button"
+                                class="estado estado-no-tomada"
+                            >
+                                No tomada
+                            </button>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="fila-recordatorio">
+
+                        <div class="fecha-recordatorio">
+                            <p>Martes 28 de mayo:</p>
+                        </div>
+
+                        <article class="tarjeta-vacia">
+
+                            <p>-NO HAY PASTILLAS</p>
+
+                            <p>PENDIENTES PARA</p>
+
+                            <p>ESTE DÍA-</p>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="fila-recordatorio">
+
+                        <div class="fecha-recordatorio">
+                            <p>Miércoles 29 de mayo:</p>
+                        </div>
+
+                        <article class="tarjeta-vacia">
+
+                            <p>-NO HAY</p>
+
+                            <p>RECORDATORIOS</p>
+
+                            <p>REGISTRADOS-</p>
+
+                        </article>
+
+                    </div>
+
+
+                    <div class="contenedor-boton-editar">
+
+                        <a
+                            href="#configuracion"
+                            class="boton boton-editar-recordatorio"
+                        >
+                            Editar recordatorio
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="seccion configuracion" id="configuracion">
+            <div class="contenedor contenedor-configuracion">
+
+                <div class="encabezado-seccion">
+
+                    <h2>Configuración de horarios:</h2>
+
+                    <p>
+                        Programa tus medicamentos de forma rápida y sencilla.
+                    </p>
+
+                </div>
+
+
+                <form class="panel-configuracion">
+
+                    <div class="grid-formulario">
+
+                        <div class="campo">
+
+                            <label for="dia">
+                                Día
+                            </label>
+
+                            <select
+                                id="dia"
+                                name="dia"
+                                required
+                            >
+                                <option value="" selected disabled>
+                                    Seleccione un día
+                                </option>
+
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miércoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sábado</option>
+                                <option value="domingo">Domingo</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="medicamento">
+                                Medicamento
+                            </label>
+
+                            <input
+                                type="text"
+                                id="medicamento"
+                                name="medicamento"
+                                placeholder="Ej. Paracetamol"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="hora">
+                                Hora
+                            </label>
+
+                            <input
+                                type="time"
+                                id="hora"
+                                name="hora"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="dosis">
+                                Dosis
+                            </label>
+
+                            <input
+                                type="text"
+                                id="dosis"
+                                name="dosis"
+                                placeholder="Ej. 1 pastilla"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="boton boton-guardar-horario"
+                    >
+                        Guardar horario
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <section class="seccion citas-medicas" id="citas">
+            <div class="contenedor">
+
+                <div class="encabezado-seccion">
+
+                    <h2>Citas médicas:</h2>
+
+                    <p>
+                        Consulta las citas programadas por tu especialista.
+                    </p>
+
+                </div>
+
+
+                <div class="panel-citas">
+
+                    <p class="mensaje-citas">
+                        Estas son las próximas citas programadas por tu
+                        especialista:
+                    </p>
+
+
+                    <div class="citas-grid">
+
+                        <!-- PRIMERA CITA -->
+                        <article class="tarjeta-cita">
+
+                            <h3>Martes 2 abril</h3>
+
+                            <p class="especialidad">
+                                Neurología
+                            </p>
+
+                            <p class="clinica">
+                                Clínica Santa Rosa
+                            </p>
+
+                            <p class="hora-cita">
+                                10:00 AM
+                            </p>
+
+
+                            <div class="doctor">
+
+                                <img
+                                    src="assets/images/drts.png"
+                                    alt="Doctor Tyron Souza"
+                                >
+
+                                <span>Dr. Tyron Souza</span>
+
+                            </div>
+
+                        </article>
+
+
+            
+                        <article class="tarjeta-cita">
+
+                            <h3>Viernes 5 abril</h3>
+
+                            <p class="especialidad">
+                                Chequeo general
+                            </p>
+
+                            <p class="clinica">
+                                Clínica Santa Rosa
+                            </p>
+
+                            <p class="hora-cita">
+                                01:00 PM
+                            </p>
+
+
+                            <div class="doctor">
+
+                                <img
+                                    src="assets/images/drms.png"
+                                    alt="Doctora María Sánchez"
+                                >
+
+                                <span>Dra. María Sánchez</span>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+
+            <div class="footer-marca">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo-footer"
+                >
+
+                <p class="footer-descripcion">
+                    Cuidando la salud física y emocional<br>
+                    de los adultos mayores.
+                </p>
+
+                <p class="derechos">
+                    © 2026 GrandAPP. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contacto">
+
+                <p>contacto@grandapp.pe</p>
+                <p>+51 999 999 999</p>
+                <p>Lima - Perú</p>
+
+            </div>
+
+
+            <div class="footer-redes">
+
+                <h3>Síguenos:</h3>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                    <li>X Twitter</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

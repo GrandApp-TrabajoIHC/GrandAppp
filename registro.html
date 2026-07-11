@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Registro de estado emocional | GrandAPP</title>
+
+    <link rel="stylesheet" href="assets/styles/styles_registro.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <a href="index.html" class="marca">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo"
+                >
+            </a>
+
+            <nav class="navegacion">
+
+                <a href="recordatorio.html">
+                    Recordatorio de<br>
+                    medicinas
+                </a>
+
+                <a
+                    href="#registro"
+                    class="nav-activo"
+                >
+                    Registro de estado<br>
+                    emocional
+                </a>
+
+                <a href="llamada.html">
+                    Llamada rápida
+                </a>
+
+            </nav>
+
+            <a href="perfil.html" class="boton boton-perfil">
+                Mi Perfil
+            </a>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- MENSAJE DEL DÍA -->
+        <section class="seccion mensaje-dia" id="registro">
+            <div class="contenedor">
+
+                <div class="encabezado-seccion">
+
+                    <h1>Registro de Estado Emocional</h1>
+
+                    <p>
+                        Registra cómo te sientes cada día y realiza un
+                        seguimiento de tu bienestar emocional.
+                    </p>
+
+                </div>
+
+
+                <div class="saludo">
+                    ¡Hola Usuario!
+                </div>
+
+
+                <article class="tarjeta-mensaje">
+
+                    <div class="mensaje-superior">
+
+                        <h2>Mensaje del día</h2>
+
+                        <span>Lunes 27</span>
+
+                    </div>
+
+                    <blockquote>
+                        “Cada día es una nueva<br>
+                        oportunidad”
+                    </blockquote>
+
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- SELECCIÓN DE EMOCIÓN -->
+        <section class="seccion seleccion-emocion">
+            <div class="contenedor">
+
+                <div class="registro-superior">
+
+                    <div class="titulo-registro">
+
+                        <h2>¿Cómo te sientes hoy?</h2>
+
+                        <p>
+                            Toca el icono que describa mejor tu estado de ánimo
+                        </p>
+
+                    </div>
+
+
+                    <div class="hora-recordatorio">
+
+                        <h2>Hora del recordatorio:</h2>
+
+                        <strong>07:30 PM</strong>
+
+                    </div>
+
+                </div>
+
+
+                <form class="formulario-emocion">
+
+                    <div class="emociones-grid">
+
+                        <!-- MUY BIEN -->
+                        <label class="tarjeta-emocion tarjeta-muy-bien">
+
+                            <input
+                                type="radio"
+                                name="emocion"
+                                value="Muy bien"
+                                required
+                            >
+
+                            <span class="contenido-emocion">
+
+                                <img
+                                    src="assets/images/muy_bien.png"
+                                    alt="Estado emocional muy bien"
+                                >
+
+                                <span class="nombre-emocion">
+                                    Muy bien
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- BIEN -->
+                        <label class="tarjeta-emocion tarjeta-bien">
+
+                            <input
+                                type="radio"
+                                name="emocion"
+                                value="Bien"
+                            >
+
+                            <span class="contenido-emocion">
+
+                                <img
+                                    src="assets/images/bien.png"
+                                    alt="Estado emocional bien"
+                                >
+
+                                <span class="nombre-emocion">
+                                    Bien
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- NORMAL -->
+                        <label class="tarjeta-emocion tarjeta-normal">
+
+                            <input
+                                type="radio"
+                                name="emocion"
+                                value="Normal"
+                            >
+
+                            <span class="contenido-emocion">
+
+                                <img
+                                    src="assets/images/normal.png"
+                                    alt="Estado emocional normal"
+                                >
+
+                                <span class="nombre-emocion">
+                                    Normal
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- MAL -->
+                        <label class="tarjeta-emocion tarjeta-mal">
+
+                            <input
+                                type="radio"
+                                name="emocion"
+                                value="Mal"
+                            >
+
+                            <span class="contenido-emocion">
+
+                                <img
+                                    src="assets/images/mal.png"
+                                    alt="Estado emocional mal"
+                                >
+
+                                <span class="nombre-emocion">
+                                    Mal
+                                </span>
+
+                            </span>
+
+                        </label>
+
+
+                        <!-- MUY MAL -->
+                        <label class="tarjeta-emocion tarjeta-muy-mal">
+
+                            <input
+                                type="radio"
+                                name="emocion"
+                                value="Muy mal"
+                            >
+
+                            <span class="contenido-emocion">
+
+                                <img
+                                    src="assets/images/muy_mal.png"
+                                    alt="Estado emocional muy mal"
+                                >
+
+                                <span class="nombre-emocion">
+                                    Muy mal
+                                </span>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- COMENTARIO -->
+                    <div class="comentario-emocion">
+
+                        <label for="comentario">
+                            ¿Quieres agregar algo? (Opcional)
+                        </label>
+
+
+                        <div class="contenedor-textarea">
+
+                            <textarea
+                                id="comentario"
+                                name="comentario"
+                                placeholder="Cuéntanos cómo te sientes hoy..."
+                            ></textarea>
+
+
+                            <button
+                                type="button"
+                                class="boton-audio"
+                                aria-label="Grabar mensaje de voz"
+                            >
+
+                                <span>
+                                    O graba un mensaje de voz
+                                </span>
+
+                                <span class="flecha">
+                                    →
+                                </span>
+
+                                <img
+                                    src="assets/images/audio.png"
+                                    alt="Grabar mensaje de voz"
+                                >
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="boton boton-guardar-registro"
+                    >
+                        Guardar Registro
+                    </button>
+
+                </form>
+
+            </div>
+        </section>
+
+
+        <!-- HISTORIAL -->
+        <section class="seccion historial-emociones">
+            <div class="contenedor">
+
+                <div class="encabezado-seccion encabezado-historial">
+
+                    <h2>Historial de Emociones:</h2>
+
+                    <p>
+                        Consulta tus registros emocionales anteriores y observa
+                        cómo ha evolucionado tu estado de ánimo.
+                    </p>
+
+                </div>
+
+
+                <div class="panel-historial">
+
+                    <!-- DOMINGO -->
+                    <article class="registro-historial">
+
+                        <div class="icono-historial historial-muy-bien">
+
+                            <img
+                                src="assets/images/muy_bien.png"
+                                alt="Muy bien"
+                            >
+
+                        </div>
+
+                        <strong>Domingo 26</strong>
+
+                        <span>10:15 AM</span>
+
+                        <strong>Muy bien</strong>
+
+                    </article>
+
+
+                    <!-- SÁBADO -->
+                    <article class="registro-historial">
+
+                        <div class="icono-historial historial-muy-mal">
+
+                            <img
+                                src="assets/images/muy_mal.png"
+                                alt="Muy mal"
+                            >
+
+                        </div>
+
+                        <strong>Sábado 25</strong>
+
+                        <span>10:15 AM</span>
+
+                        <strong>Muy mal</strong>
+
+                    </article>
+
+
+                    <!-- VIERNES -->
+                    <article class="registro-historial">
+
+                        <div class="icono-historial historial-bien">
+
+                            <img
+                                src="assets/images/bien.png"
+                                alt="Bien"
+                            >
+
+                        </div>
+
+                        <strong>Viernes 24</strong>
+
+                        <span>10:15 AM</span>
+
+                        <strong>Bien</strong>
+
+                    </article>
+
+
+                    <!-- JUEVES -->
+                    <article class="registro-historial">
+
+                        <div class="icono-historial historial-normal">
+
+                            <img
+                                src="assets/images/normal.png"
+                                alt="Normal"
+                            >
+
+                        </div>
+
+                        <strong>Jueves 23</strong>
+
+                        <span>10:15 AM</span>
+
+                        <strong>Normal</strong>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+
+            <div class="footer-marca">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo-footer"
+                >
+
+                <p class="footer-descripcion">
+                    Cuidando la salud física y emocional<br>
+                    de los adultos mayores.
+                </p>
+
+                <p class="derechos">
+                    © 2026 GrandAPP. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contacto">
+
+                <p>contacto@grandapp.pe</p>
+                <p>+51 999 999 999</p>
+                <p>Lima - Perú</p>
+
+            </div>
+
+
+            <div class="footer-redes">
+
+                <h3>Síguenos:</h3>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                    <li>X Twitter</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
