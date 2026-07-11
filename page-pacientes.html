@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrandPapp | Expedientes de Pacientes</title>
+<link rel="stylesheet" href="assets/styles/styles2.css">
+</head>
+<body>
+
+<main>
+<section id="page-pacientes" class="page">
+
+
+
+<div class="frame">
+
+  <!-- HEADER -->
+  <div class="header">
+    <a href="index.html" class="logo-area" style="text-decoration:none;">
+      <div class="logo-box">GP</div>
+      <div class="logo-text"><span class="grand">GRAND</span><span class="papp">PAPP</span></div>
+    </a>
+    <div class="nav-center">
+      <a href="page-panel.html" class="nav-item" style="margin-right:32px;">Panel de Casos</a>
+      <a href="page-pacientes.html" class="nav-item active" style="margin-right:32px;">Pacientes</a>
+      <div class="nav-badge-wrap"><a href="page-despacho.html" class="nav-item" style="margin-right:0;">Alertas</a><div class="nav-counter">2</div></div>
+      <a href="page-mapa.html" class="nav-item" style="margin-right:32px;">Mapa</a>
+      <a href="page-reportes.html" class="nav-item" style="margin-right:32px;">Reportes</a>
+      <a href="page-seguridad.html" class="nav-item">Seguridad</a>
+    </div>
+    <div class="nav-right">
+      <div class="net-tag"> Modo Local</div>
+      <div class="btn-profile-gray">Mi Perfil (TS-Lima)</div>
+    </div>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-title">Total Pacientes Asignados</div>
+      <div class="kpi-number" style="color:#102441;">32</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Casos en Riesgo Crítico</div>
+      <div class="kpi-number" style="color:#FF0000;">2</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Adherencia Promedio Semanal</div>
+      <div class="kpi-number" style="color:#2371D7;">74%</div>
+    </div>
+  </div>
+
+  <!-- TOOLBAR -->
+  <div class="toolbar">
+    <div class="search-box">
+      <span class="search-icon"></span>
+      Filtrar por nombre, DNI o Sector...
+    </div>
+    <div class="dropdown-group">
+      <div class="dropdown">Jurisdicción: Todos ▾</div>
+      <div class="dropdown">Estado: Todos ▾</div>
+      <div class="dropdown">Adherencia: Menor a 50% ▾</div>
+    </div>
+    <a href="page-bitacora.html" class="btn-register" style="text-decoration:none; display:inline-block;">+ Registrar Paciente</a>
+  </div>
+
+  <!-- TABLE -->
+  <div class="table-wrap">
+    <div class="table-header">
+      <div class="th col-patient">Paciente</div>
+      <div class="th col-age">Edad / Jurisdicción</div>
+      <div class="th col-risk">Estado de Riesgo</div>
+      <div class="th col-emotional">Estado Emocional Reciente</div>
+      <div class="th col-adherence">Adherencia Médica</div>
+      <div class="th col-actions">Acciones</div>
+    </div>
+
+    <!-- Fila 1: Crítico -->
+    <div class="row">
+      <div class="col-patient">
+        <div class="patient-name">Carmen Lodovica</div>
+        <div class="patient-dni">DNI 0984XXXX</div>
+      </div>
+      <div class="col-age age-sector">82 años • Lima Centro - Sector B</div>
+      <div class="col-risk"><span class="risk-tag critical"> RIESGO CRÍTICO</span></div>
+      <div class="col-emotional emotional-text"> Tristeza Profunda (3d)</div>
+      <div class="col-adherence">
+        <div class="adherence-wrap">
+          <div class="adherence-bar-bg"><div class="adherence-bar-fill" style="width:38%; background:#FF0000;"></div></div>
+          <div class="adherence-pct">38%</div>
+        </div>
+      </div>
+      <div class="col-actions actions-links">
+        <a href="page-ficha.html" class="action-link">Ver Ficha</a>
+        <a href="page-bitacora.html" class="action-link">Bitácora</a>
+      </div>
+    </div>
+
+    <!-- Fila 2: Estable -->
+    <div class="row">
+      <div class="col-patient">
+        <div class="patient-name">Humberto Peirano</div>
+        <div class="patient-dni">DNI 0712XXXX</div>
+      </div>
+      <div class="col-age age-sector">76 años • Lima Centro - Sector B</div>
+      <div class="col-risk"><span class="risk-tag stable"> ESTABLE</span></div>
+      <div class="col-emotional emotional-text"> Alegre / Optimista</div>
+      <div class="col-adherence">
+        <div class="adherence-wrap">
+          <div class="adherence-bar-bg"><div class="adherence-bar-fill" style="width:92%; background:#3E8E1F;"></div></div>
+          <div class="adherence-pct">92%</div>
+        </div>
+      </div>
+      <div class="col-actions actions-links">
+        <a href="page-ficha.html" class="action-link">Ver Ficha</a>
+        <a href="page-bitacora.html" class="action-link">Bitácora</a>
+      </div>
+    </div>
+
+    <!-- Fila 3: Observación -->
+    <div class="row">
+      <div class="col-patient">
+        <div class="patient-name">Alejandro Benavides</div>
+        <div class="patient-dni">DNI 0644XXXX</div>
+      </div>
+      <div class="col-age age-sector">79 años • Comas - Sector 3</div>
+      <div class="col-risk"><span class="risk-tag warning"> EN OBSERVACIÓN</span></div>
+      <div class="col-emotional emotional-text"> Neutral / Sin Reporte</div>
+      <div class="col-adherence">
+        <div class="adherence-wrap">
+          <div class="adherence-bar-bg"><div class="adherence-bar-fill" style="width:55%; background:#FF8C00;"></div></div>
+          <div class="adherence-pct">55%</div>
+        </div>
+      </div>
+      <div class="col-actions actions-links">
+        <a href="page-ficha.html" class="action-link">Ver Ficha</a>
+        <a href="page-bitacora.html" class="action-link">Bitácora</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <div class="pagination-left">Mostrando 1-3 de 32 pacientes</div>
+    <div class="pagination-right">
+      <div class="page-btn nav">Anterior</div>
+      <div class="page-btn active">1</div>
+      <div class="page-btn">2</div>
+      <div class="page-btn">3</div>
+      <div class="page-btn">4</div>
+      <div class="page-btn nav">Siguiente</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</section>
+
+</main>
+
+</body>
+</html>

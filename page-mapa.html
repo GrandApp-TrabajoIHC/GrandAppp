@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrandPapp | Mapa</title>
+<link rel="stylesheet" href="assets/styles/styles2.css">
+</head>
+<body>
+
+<main>
+<section id="page-mapa" class="page">
+
+
+
+<div class="frame">
+
+  <!-- MAP BASE LAYER -->
+  <div class="map-base">
+    <div class="sector-boundary" style="top:160px; left:340px; width:560px; height:520px;"></div>
+    <div class="sector-label" style="top:172px; left:360px;">Jurisdicción B — Lima Centro</div>
+  </div>
+
+  <!-- HEADER -->
+  <div class="header">
+    <a href="index.html" class="logo-area" style="text-decoration:none;">
+      <div class="logo-box">GP</div>
+      <div class="logo-text"><span class="grand">GRAND</span><span class="papp">PAPP</span></div>
+    </a>
+    <div class="nav-center">
+      <a href="page-panel.html" class="nav-item" style="margin-right:32px;">Panel de Casos</a>
+      <a href="page-pacientes.html" class="nav-item" style="margin-right:32px;">Pacientes</a>
+      <div class="nav-badge-wrap"><a href="page-despacho.html" class="nav-item" style="margin-right:0;">Alertas</a><div class="nav-counter">2</div></div>
+      <a href="page-mapa.html" class="nav-item active" style="margin-right:32px;">Mapa</a>
+      <a href="page-reportes.html" class="nav-item" style="margin-right:32px;">Reportes</a>
+      <a href="page-seguridad.html" class="nav-item">Seguridad</a>
+    </div>
+    <div class="nav-right">
+      <div class="net-tag"> Modo Local</div>
+      <div class="btn-profile-gray">Mi Perfil (TS-Lima)</div>
+    </div>
+  </div>
+
+  <!-- FILTER PANEL -->
+  <div class="filter-panel">
+    <div class="filter-title">Capas del Mapa</div>
+    <div class="filter-row">
+      <div class="checkbox checked">✓</div>
+      Emergencias SOS Activas
+      <div class="legend-dot red"></div>
+    </div>
+    <div class="filter-row">
+      <div class="checkbox checked">✓</div>
+      Personal en Campo (TS)
+      <div class="legend-dot blue"></div>
+    </div>
+    <div class="filter-row">
+      <div class="checkbox"></div>
+      Pacientes Estables
+      <div class="legend-dot green"></div>
+    </div>
+    <div class="filter-row">
+      <div class="checkbox checked">✓</div>
+      Límites de Sectores (Jurisdicción B)
+      <div class="legend-dot dashed"></div>
+    </div>
+  </div>
+
+  <!-- SOS PIN 1: Carmen Lodovica -->
+  <div class="sos-pin-wrap" style="top:330px; left:560px;">
+    <div class="heat-ring"></div>
+    <div class="pin-label">Carmen Lodovica</div>
+    <svg class="pin-svg" width="30" height="38" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 0C6.3 0 0 6.3 0 14c0 10.5 14 22 14 22s14-11.5 14-22C28 6.3 21.7 0 14 0z" fill="#FF0000"/>
+      <circle cx="14" cy="14" r="5.5" fill="#FFFFFF"/>
+    </svg>
+  </div>
+
+  <!-- SOS PIN 2: Alejandro Benavides (Comas) -->
+  <div class="sos-pin-wrap" style="top:200px; left:1180px;">
+    <div class="pin-label">Alejandro Benavides</div>
+    <svg class="pin-svg" width="26" height="33" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14 0C6.3 0 0 6.3 0 14c0 10.5 14 22 14 22s14-11.5 14-22C28 6.3 21.7 0 14 0z" fill="#FF0000"/>
+      <circle cx="14" cy="14" r="5.5" fill="#FFFFFF"/>
+    </svg>
+  </div>
+
+  <!-- TECH PINS -->
+  <div class="tech-pin" style="top:420px; left:480px;">TS-1</div>
+  <div class="tech-pin" style="top:540px; left:700px;">TS-2</div>
+  <div class="tech-pin" style="top:300px; left:850px;">TS-3</div>
+
+  <!-- FLOATING INFO CARD -->
+  <div class="info-card">
+    <div class="info-item"> Sector Activo: <span class="info-num">Lima Centro - Sector B</span></div>
+    <div class="info-item" style="color:#FF0000;">● Incidentes sin atender: <span class="info-num">2</span></div>
+    <div class="info-item" style="color:#2371D7;">● Técnicos en ruta: <span class="info-num">3</span></div>
+  </div>
+
+</div>
+
+
+
+</section>
+
+</main>
+
+</body>
+</html>

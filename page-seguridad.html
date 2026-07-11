@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrandPapp | Seguridad</title>
+<link rel="stylesheet" href="assets/styles/styles2.css">
+</head>
+<body>
+
+<main>
+<section id="page-seguridad" class="page">
+
+
+
+<div class="frame">
+
+  <!-- HEADER -->
+  <div class="header">
+    <a href="index.html" class="logo-area" style="text-decoration:none;">
+      <div class="logo-box">GP</div>
+      <div class="logo-text"><span class="grand">GRAND</span><span class="papp">PAPP</span></div>
+    </a>
+    <div class="nav-center">
+      <a href="page-panel.html" class="nav-item" style="margin-right:32px;">Panel de Casos</a>
+      <a href="page-pacientes.html" class="nav-item" style="margin-right:32px;">Pacientes</a>
+      <div class="nav-badge-wrap"><a href="page-despacho.html" class="nav-item" style="margin-right:0;">Alertas</a><div class="nav-counter">2</div></div>
+      <a href="page-mapa.html" class="nav-item" style="margin-right:32px;">Mapa</a>
+      <a href="page-reportes.html" class="nav-item" style="margin-right:32px;">Reportes</a>
+      <a href="page-seguridad.html" class="nav-item active">Seguridad</a>
+    </div>
+    <div class="nav-right">
+      <div class="btn-profile-gray">Mi Perfil (Admin)</div>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main-layout">
+
+    <!-- COLUMNA IZQUIERDA: RBAC -->
+    <div class="col-left">
+      <div class="card">
+        <div class="panel-title">Permisos de Acceso (RBAC)</div>
+
+        <div class="operator-row">
+          <div class="op-avatar">SC</div>
+          <div class="op-info">
+            <div class="op-name">Supervisor Central (Admin Municipal)</div>
+            <div class="op-masked"></div>
+          </div>
+          <div class="role-tag red"> Total</div>
+        </div>
+
+        <div class="operator-row">
+          <div class="op-avatar">TS</div>
+          <div class="op-info">
+            <div class="op-name">Técnico Asistencial (TS-Lima)</div>
+            <div class="op-masked"></div>
+          </div>
+          <div class="role-tag blue"> Solo Local/Lectura</div>
+        </div>
+
+        <div class="operator-row">
+          <div class="op-avatar">MA</div>
+          <div class="op-info">
+            <div class="op-name">Médico Auditor (MINSA)</div>
+            <div class="op-masked"></div>
+          </div>
+          <div class="role-tag green"> Consulta Historial</div>
+        </div>
+
+        <div class="session-box">
+          <div class="session-label">Token de Sesión Activo</div>
+          <div class="session-value"> Caduca en: 00:18:42</div>
+          <div class="session-bar-bg"><div class="session-bar-fill"></div></div>
+          <div class="session-note">Cierre preventivo automático al expirar la firma criptográfica del dispositivo.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: AUDITORÍA -->
+    <div class="col-right">
+      <div class="card">
+        <div class="panel-title">Bitácora e Historial Inmutable de Auditoría</div>
+
+        <div class="table-header">
+          <div class="th col-user">Usuario ID</div>
+          <div class="th col-action">Acción Ejecutada</div>
+          <div class="th col-resource">Recurso Consultado</div>
+          <div class="th col-time">Marca de Tiempo</div>
+        </div>
+
+        <div class="log-row">
+          <div class="col-user log-user">TS-04 (Lima)</div>
+          <div class="col-action"><span class="action-tag blue">LECTURA</span></div>
+          <div class="col-resource log-resource">Ficha Carmen Lodovica</div>
+          <div class="col-time log-time">2026-06-22 14:12:05</div>
+        </div>
+
+        <div class="log-row">
+          <div class="col-user log-user">ADMIN-01</div>
+          <div class="col-action"><span class="action-tag red">WIPE-OUT</span></div>
+          <div class="col-resource log-resource">Caché Local Dispositivo #2</div>
+          <div class="col-time log-time">2026-06-22 13:45:22</div>
+        </div>
+
+        <div class="log-row">
+          <div class="col-user log-user">MED-09</div>
+          <div class="col-action"><span class="action-tag green">MODIFICAR</span></div>
+          <div class="col-resource log-resource">Tratamiento Metformina</div>
+          <div class="col-time log-time">2026-06-22 11:04:10</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TERMINAL CRIPTOGRÁFICA -->
+  <div class="terminal-section">
+    <div class="terminal">
+      <div class="term-line term-info">[INFO] 2026-06-22 14:26:00 - Inicializando almacén de llaves locales...</div>
+      <div class="term-line term-ok"><span class="term-tag">[OK]</span> AES-256-GCM verificado. Llave de sesión firmada por módulo municipal.</div>
+      <div class="term-line term-secure"><span class="term-tag">[SECURE]</span> Ley 29733 Compliant: Anonimización activa para visualización en pantallas públicas.</div>
+      <div class="term-line term-remote"><span class="term-tag">[REMOTE]</span> Protocolo Wipe-out de emergencia en espera. Estado: HABILITADO.</div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</section>
+
+</main>
+
+</body>
+</html>

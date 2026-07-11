@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Mi perfil | GrandAPP</title>
+
+    <link rel="stylesheet" href="assets/styles/styles_perfil.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <a href="index.html" class="marca">
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo"
+                >
+            </a>
+
+            <nav class="navegacion">
+                <a href="index.html#servicios">Servicios</a>
+                <a href="index.html#equipo">Equipo</a>
+                <a href="index.html#contacto">Contáctanos</a>
+            </nav>
+
+            <a href="perfil.html" class="boton boton-perfil">
+                Mi Perfil
+            </a>
+
+        </div>
+    </header>
+
+
+    <main class="contenido-principal">
+
+        <div class="contenedor">
+
+            <h1 class="titulo-pagina">Perfil</h1>
+
+
+            <!-- INFORMACIÓN PRINCIPAL DEL PERFIL -->
+            <section class="perfil-grid">
+
+                <!-- COLUMNA IZQUIERDA -->
+                <div class="perfil-lateral">
+
+                    <div class="tarjeta-avatar">
+                        <div class="avatar">
+                            <img
+                                src="assets/images/usuario.png"
+                                alt="Avatar del usuario"
+                            >
+                        </div>
+                    </div>
+
+
+                    <div class="tarjeta-contacto">
+
+                        <div class="dato-contacto">
+                            <span>JURISDICCIÓN</span>
+
+                            <p>
+                                Lima Centro - Sector B
+                            </p>
+                        </div>
+
+                        <div class="dato-contacto">
+                            <span>DIRECCIÓN</span>
+
+                            <p>
+                                Jirón de la Unión 450, Cercado
+                            </p>
+                        </div>
+
+                        <div class="dato-contacto">
+                            <span>CONTACTO DE EMERGENCIA</span>
+
+                            <p>
+                                Hijo (991 XXX XXX)
+                            </p>
+                        </div>
+
+                        <button
+                            type="button"
+                            class="boton boton-emergencia"
+                        >
+                            Editar contactos de emergencia
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COLUMNA DERECHA -->
+                <div class="tarjeta-datos">
+
+                    <form class="formulario-datos">
+
+                        <div class="campo">
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                value="Carmen Lodovica"
+                                readonly
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="edad">
+                                Edad
+                            </label>
+
+                            <input
+                                type="text"
+                                id="edad"
+                                name="edad"
+                                value="82 años"
+                                readonly
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="dni">
+                                DNI
+                            </label>
+
+                            <input
+                                type="text"
+                                id="dni"
+                                name="dni"
+                                value="78945XXX"
+                                readonly
+                            >
+                        </div>
+
+
+                        <div class="campo">
+                            <label for="correo">
+                                Correo
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                name="correo"
+                                value="carmenlodovica@gmail.com"
+                                readonly
+                            >
+                        </div>
+
+
+                        <button
+                            type="button"
+                            class="boton boton-editar"
+                            id="botonEditar"
+                        >
+                            Editar Datos
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACCESIBILIDAD -->
+            <section class="seccion-accesibilidad">
+
+                <h2>Accesibilidad</h2>
+
+                <div class="tarjeta-accesibilidad">
+
+                    <p class="descripcion-accesibilidad">
+                        GrandAPP está diseñada para facilitar el uso por
+                        adultos mayores.
+                    </p>
+
+
+                    <form class="formulario-accesibilidad">
+
+                        <div class="opciones-accesibilidad">
+
+                            <label class="opcion">
+                                <input
+                                    type="checkbox"
+                                    name="textoGrande"
+                                >
+
+                                <span>Texto grande</span>
+                            </label>
+
+
+                            <label class="opcion">
+                                <input
+                                    type="checkbox"
+                                    name="comandosVoz"
+                                >
+
+                                <span>Compatible con comandos de voz</span>
+                            </label>
+
+
+                            <label class="opcion">
+                                <input
+                                    type="checkbox"
+                                    name="altoContraste"
+                                >
+
+                                <span>Alto contraste</span>
+                            </label>
+
+
+                            <label class="opcion">
+                                <input
+                                    type="checkbox"
+                                    name="lectorPantalla"
+                                >
+
+                                <span>
+                                    Compatible con lectores de pantalla
+                                </span>
+                            </label>
+
+
+                            <label class="opcion">
+                                <input
+                                    type="checkbox"
+                                    name="cambiarIdioma"
+                                >
+
+                                <span>Cambiar idioma</span>
+                            </label>
+
+
+                            <label class="opcion">
+                                <input
+                                    type="checkbox"
+                                    name="botonesGrandes"
+                                >
+
+                                <span>Botones de gran tamaño</span>
+                            </label>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="boton boton-guardar"
+                        >
+                            Guardar cambios
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+
+            <!-- ENLACES INFERIORES -->
+            <section class="opciones-legales">
+
+                <a href="#" class="tarjeta-legal">
+                    Privacidad
+                </a>
+
+                <a href="#" class="tarjeta-legal">
+                    Política de privacidad
+                </a>
+
+                <a href="#" class="tarjeta-legal">
+                    Términos y condiciones
+                </a>
+
+            </section>
+
+
+            <div class="contenedor-cerrar-sesion">
+
+                <a href="index.html" class="boton boton-cerrar">
+                    Cerrar sesión
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+
+            <div class="footer-marca">
+
+                <img
+                    src="assets/images/logo.png"
+                    alt="Logo de GrandAPP"
+                    class="logo-footer"
+                >
+
+                <p class="footer-descripcion">
+                    Cuidando la salud física y emocional<br>
+                    de los adultos mayores.
+                </p>
+
+                <p class="derechos">
+                    © 2026 GrandAPP. Todos los derechos reservados.
+                </p>
+
+            </div>
+
+
+            <div class="footer-contacto">
+
+                <p>contacto@grandapp.pe</p>
+                <p>+51 999 999 999</p>
+                <p>Lima - Perú</p>
+
+            </div>
+
+
+            <div class="footer-redes">
+
+                <h3>Síguenos:</h3>
+
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Tiktok</li>
+                    <li>X Twitter</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script>
+        const botonEditar = document.getElementById("botonEditar");
+
+        const camposPerfil = document.querySelectorAll(
+            ".formulario-datos input"
+        );
+
+        botonEditar.addEventListener("click", function () {
+            const estaEditando =
+                botonEditar.textContent.trim() === "Guardar Datos";
+
+            camposPerfil.forEach(function (campo) {
+                campo.readOnly = estaEditando;
+            });
+
+            if (estaEditando) {
+                botonEditar.textContent = "Editar Datos";
+            } else {
+                botonEditar.textContent = "Guardar Datos";
+                camposPerfil[0].focus();
+            }
+        });
+    </script>
+
+</body>
+</html>

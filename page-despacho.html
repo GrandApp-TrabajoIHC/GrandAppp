@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrandPapp | Despacho de Alertas SOS</title>
+<link rel="stylesheet" href="assets/styles/styles2.css">
+</head>
+<body>
+
+<main>
+<section id="page-despacho" class="page">
+
+
+
+<div class="frame">
+
+  <!-- HEADER -->
+  <div class="header">
+    <a href="index.html" class="logo-area" style="text-decoration:none;">
+      <div class="logo-box">GP</div>
+      <div class="logo-text"><span class="grand">GRAND</span><span class="papp">PAPP</span></div>
+    </a>
+    <div class="nav-center">
+      <a href="page-panel.html" class="nav-item" style="margin-right:32px;">Panel de Casos</a>
+      <a href="page-pacientes.html" class="nav-item" style="margin-right:32px;">Pacientes</a>
+      <div class="nav-badge-wrap"><a href="page-despacho.html" class="nav-item active" style="margin-right:0;">Alertas</a><div class="nav-counter">2</div></div>
+      <a href="page-mapa.html" class="nav-item" style="margin-right:32px;">Mapa</a>
+      <a href="page-reportes.html" class="nav-item" style="margin-right:32px;">Reportes</a>
+      <a href="page-seguridad.html" class="nav-item">Seguridad</a>
+    </div>
+    <div class="nav-right">
+      <div class="net-tag"> Modo Local</div>
+      <div class="btn-profile-gray">Mi Perfil (TS-Lima)</div>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main-layout">
+
+    <!-- COLUMNA IZQUIERDA: COLA -->
+    <div class="col-left">
+      <div class="queue-header">
+        <div class="ping-wrap">
+          <div class="ping-outer"></div>
+          <div class="ping-inner"></div>
+        </div>
+        <div class="queue-title"> COLA DE EMERGENCIAS ACTIVAS (2)</div>
+      </div>
+
+      <div class="sos-card selected">
+        <div class="connector-arrow"></div>
+        <div class="sos-name">Carmen Lodovica (82 años)</div>
+        <div class="sos-badge">SOS: 15:02</div>
+        <div class="sos-sub">Jirón de la Unión 450, Cercado de Lima · -12.04637, -77.02942</div>
+      </div>
+
+      <div class="sos-card waiting">
+        <div class="sos-name">Alejandro Benavides (79 años)</div>
+        <div class="sos-badge gray">SOS: 15:03</div>
+        <div class="sos-sub">Zona aproximada, Comas</div>
+        <div class="sos-warning"> Ubicación aproximada / Comas</div>
+      </div>
+    </div>
+
+    <!-- COLUMNA DERECHA: DESPACHO -->
+    <div class="col-right">
+
+      <div class="status-bar">
+        <div class="status-left">
+          <div class="avatar-status">CL</div>
+          <div>
+            <div class="status-name">Carmen Lodovica</div>
+            <div class="status-dni">DNI 0984XXXX</div>
+            <div class="status-contact">Contacto de emergencia: Hijo (991 XXX XXX)</div>
+          </div>
+        </div>
+        <div class="timer-box">
+          <div class="timer-label"> Tiempo en Espera</div>
+          <div class="timer-value">04 min 12 s</div>
+        </div>
+      </div>
+
+      <div class="map-container">
+        <div class="map-road" style="top:120px; left:0; width:100%; height:14px;"></div>
+        <div class="map-road" style="top:240px; left:0; width:100%; height:10px;"></div>
+        <div class="map-road" style="top:0; left:200px; width:12px; height:100%;"></div>
+        <div class="map-road" style="top:0; left:520px; width:16px; height:100%;"></div>
+        <div class="map-radius"></div>
+        <div class="map-tooltip"> Carmen Lodovica - Coordenadas: -12.04637, -77.02942</div>
+        <div class="map-pin-shape">
+          <svg width="28" height="36" viewBox="0 0 28 36" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 0C6.3 0 0 6.3 0 14c0 10.5 14 22 14 22s14-11.5 14-22C28 6.3 21.7 0 14 0z" fill="#FF0000"/>
+            <circle cx="14" cy="14" r="5.5" fill="#FFFFFF"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="action-bar">
+        <div class="action-left">
+          <div class="action-left-title"> Alerta de Salud Crítica</div>
+          <div class="action-left-text">38% Adherencia Médica | Diagnóstico: Hipertensión / Diabetes</div>
+        </div>
+        <div class="action-right">DESPACHAR ASISTENCIA / FINALIZAR ALERTA</div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrandPapp | Reportes</title>
+<link rel="stylesheet" href="assets/styles/styles2.css">
+</head>
+<body>
+
+<main>
+<section id="page-reportes" class="page">
+
+
+
+<div class="frame">
+
+  <!-- HEADER -->
+  <div class="header">
+    <a href="index.html" class="logo-area" style="text-decoration:none;">
+      <div class="logo-box">GP</div>
+      <div class="logo-text"><span class="grand">GRAND</span><span class="papp">PAPP</span></div>
+    </a>
+    <div class="nav-center">
+      <a href="page-panel.html" class="nav-item" style="margin-right:32px;">Panel de Casos</a>
+      <a href="page-pacientes.html" class="nav-item" style="margin-right:32px;">Pacientes</a>
+      <div class="nav-badge-wrap"><a href="page-despacho.html" class="nav-item" style="margin-right:0;">Alertas</a><div class="nav-counter">2</div></div>
+      <a href="page-mapa.html" class="nav-item" style="margin-right:32px;">Mapa</a>
+      <a href="page-reportes.html" class="nav-item active" style="margin-right:32px;">Reportes</a>
+      <a href="page-seguridad.html" class="nav-item">Seguridad</a>
+    </div>
+    <div class="nav-right">
+      <div class="net-tag"> Modo Local</div>
+      <div class="btn-profile-gray">Mi Perfil (Admin)</div>
+    </div>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-left">
+      <div class="dropdown">Rango: Últimos 30 días ▾</div>
+      <div class="dropdown">Jurisdicción: Todos los Sectores ▾</div>
+    </div>
+    <div class="btn-export"> Exportar Reporte (PDF/Excel)</div>
+  </div>
+
+  <!-- KPI ROW -->
+  <div class="kpi-row">
+    <div class="kpi-card">
+      <div class="kpi-title">SOS Atendidos</div>
+      <div class="kpi-number">142</div>
+      <div class="kpi-sub green">▲ +12% vs mes anterior</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Tiempo Promedio de Respuesta</div>
+      <div class="kpi-number">05 min 42 s</div>
+      <div class="kpi-sub gray">Dentro del límite óptimo</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Tasa de Adherencia Médica Promedio</div>
+      <div class="kpi-number">74.8%</div>
+      <div class="kpi-sub red">▼ -2.1% en Sector B</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-title">Bitácoras Firmadas (Ley 29733)</div>
+      <div class="kpi-number">528</div>
+      <div class="kpi-sub gray">100% Auditadas</div>
+    </div>
+  </div>
+
+  <!-- CHARTS ROW -->
+  <div class="charts-row">
+
+    <!-- LINE CHART -->
+    <div class="chart-card chart-left">
+      <div class="chart-title">Tendencia de Adherencia Médica vs. Alertas SOS</div>
+      <div class="chart-legend-row">
+        <div class="legend-item"><div class="legend-dot" style="background:#3E8E1F;"></div>% Adherencia Médica</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#FF0000;"></div>Alertas SOS Críticas</div>
+      </div>
+
+      <svg width="100%" height="260" viewBox="0 0 880 260" xmlns="http://www.w3.org/2000/svg">
+        <!-- grid lines -->
+        <line x1="0" y1="20" x2="880" y2="20" stroke="#EEF2F7" stroke-width="1"/>
+        <line x1="0" y1="80" x2="880" y2="80" stroke="#EEF2F7" stroke-width="1"/>
+        <line x1="0" y1="140" x2="880" y2="140" stroke="#EEF2F7" stroke-width="1"/>
+        <line x1="0" y1="200" x2="880" y2="200" stroke="#EEF2F7" stroke-width="1"/>
+        <line x1="0" y1="240" x2="880" y2="240" stroke="#D8E1EC" stroke-width="1.5"/>
+
+        <!-- adherence line (green, ascending) -->
+        <polyline points="20,210 150,195 280,175 410,150 540,120 670,95 800,70"
+          fill="none" stroke="#3E8E1F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="20" cy="210" r="4.5" fill="#3E8E1F"/>
+        <circle cx="150" cy="195" r="4.5" fill="#3E8E1F"/>
+        <circle cx="280" cy="175" r="4.5" fill="#3E8E1F"/>
+        <circle cx="410" cy="150" r="4.5" fill="#3E8E1F"/>
+        <circle cx="540" cy="120" r="4.5" fill="#3E8E1F"/>
+        <circle cx="670" cy="95" r="4.5" fill="#3E8E1F"/>
+        <circle cx="800" cy="70" r="4.5" fill="#3E8E1F"/>
+
+        <!-- SOS line (red, descending) -->
+        <polyline points="20,50 150,65 280,85 410,110 540,140 670,165 800,190"
+          fill="none" stroke="#FF0000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="20" cy="50" r="4.5" fill="#FF0000"/>
+        <circle cx="150" cy="65" r="4.5" fill="#FF0000"/>
+        <circle cx="280" cy="85" r="4.5" fill="#FF0000"/>
+        <circle cx="410" cy="110" r="4.5" fill="#FF0000"/>
+        <circle cx="540" cy="140" r="4.5" fill="#FF0000"/>
+        <circle cx="670" cy="165" r="4.5" fill="#FF0000"/>
+        <circle cx="800" cy="190" r="4.5" fill="#FF0000"/>
+
+        <!-- x axis labels -->
+        <text x="20" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 1</text>
+        <text x="150" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 2</text>
+        <text x="280" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 3</text>
+        <text x="410" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 4</text>
+        <text x="540" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 5</text>
+        <text x="670" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 6</text>
+        <text x="800" y="255" font-size="11" fill="#8C9BB0" text-anchor="middle">Sem 7</text>
+      </svg>
+    </div>
+
+    <!-- DONUT CHART -->
+    <div class="chart-card chart-right">
+      <div class="chart-title">Distribución de Riesgo Emocional</div>
+
+      <svg width="100%" height="190" viewBox="0 0 200 190" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(100,95)">
+          <!-- Donut segments: 65% green, 20% yellow, 15% red. circumference using r=70, stroke-width=28 -->
+          <circle r="70" fill="none" stroke="#EDF2F7" stroke-width="28"/>
+          <!-- green 65% -->
+          <circle r="70" fill="none" stroke="#63D863" stroke-width="28"
+            stroke-dasharray="285.9 439.8" stroke-dashoffset="0" transform="rotate(-90)"/>
+          <!-- yellow 20%, offset after green -->
+          <circle r="70" fill="none" stroke="#FFD23F" stroke-width="28"
+            stroke-dasharray="88 439.8" stroke-dashoffset="-285.9" transform="rotate(-90)"/>
+          <!-- red 15%, offset after green+yellow -->
+          <circle r="70" fill="none" stroke="#FF0000" stroke-width="28"
+            stroke-dasharray="66 439.8" stroke-dashoffset="-373.9" transform="rotate(-90)"/>
+        </g>
+      </svg>
+
+      <div class="donut-legend">
+        <div class="donut-legend-item">
+          <div class="donut-legend-left"><div class="donut-dot" style="background:#63D863;"></div>Estable / Optimista</div>
+          <div class="donut-pct">65%</div>
+        </div>
+        <div class="donut-legend-item">
+          <div class="donut-legend-left"><div class="donut-dot" style="background:#FFD23F;"></div>Neutral / Sin variaciones</div>
+          <div class="donut-pct">20%</div>
+        </div>
+        <div class="donut-legend-item">
+          <div class="donut-legend-left"><div class="donut-dot" style="background:#FF0000;"></div>Tristeza Profunda / Riesgo</div>
+          <div class="donut-pct">15%</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SECTOR TABLE -->
+  <div class="table-section">
+    <div class="table-wrap">
+      <div class="table-header">
+        <div class="th col-sector">Sector</div>
+        <div class="th col-patients">Pacientes Asignados</div>
+        <div class="th col-sos">SOS Despachados</div>
+        <div class="th col-level">Nivel de Riesgo Promedio</div>
+      </div>
+      <div class="table-row">
+        <div class="col-sector row-sector">Lima Centro - Sector B</div>
+        <div class="col-patients row-value">32</div>
+        <div class="col-sos row-value">14</div>
+        <div class="col-level"><span class="risk-tag high"> Alto</span></div>
+      </div>
+      <div class="table-row" style="border-top:1px solid #E2E8F0;">
+        <div class="col-sector row-sector">Comas - Sector 3</div>
+        <div class="col-patients row-value">27</div>
+        <div class="col-sos row-value">9</div>
+        <div class="col-level"><span class="risk-tag high" style="background:rgba(255,69,0,0.08); color:#FF4500;"> Medio</span></div>
+      </div>
+      <div class="table-row" style="border-top:1px solid #E2E8F0;">
+        <div class="col-sector row-sector">Surquillo - Sector 1</div>
+        <div class="col-patients row-value">19</div>
+        <div class="col-sos row-value">3</div>
+        <div class="col-level"><span class="risk-tag high" style="background:rgba(168,253,103,0.2); color:#2C7A0B;">Bajo</span></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+</section>
+
+</main>
+
+</body>
+</html>

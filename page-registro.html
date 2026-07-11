@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GrandpAPP — Crear cuenta</title>
+  <link rel="stylesheet" href="assets/styles/styles2.css" />
+</head>
+<body id="page-registro">
+  <div class="frame">
+    <form class="card" action="#" method="post" novalidate>
+      <h1 class="heading">Crear cuenta</h1>
+
+      <label class="field">
+        <span class="label">Nombre completo</span>
+        <input type="text" name="nombre" placeholder="E.J. Carmen Olivos Piedra" required />
+      </label>
+
+      <label class="field">
+        <span class="label">DNI</span>
+        <input type="text" name="dni" placeholder="Número de DNI" inputmode="numeric" required />
+      </label>
+
+      <label class="field">
+        <span class="label">Teléfono</span>
+        <input type="tel" name="telefono" placeholder="+51 9XXXXXXXX" inputmode="tel" required />
+      </label>
+
+      <label class="field">
+        <span class="label">Correo electrónico</span>
+        <input type="email" name="email" placeholder="correo@ejemplo.com" required />
+      </label>
+
+      <label class="field">
+        <span class="label">Contraseña</span>
+        <input type="password" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required />
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" name="terminos" required />
+        <span>Acepto los términos y política de privacidad</span>
+      </label>
+
+      <button class="btn" type="submit">Crear cuenta</button>
+
+      <p class="foot">¿Ya tienes cuenta? <a href="page-login.html">Iniciar sesión</a></p>
+    </form>
+  </div>
+
+  <script src="assets/scripts/main.js" defer></script>
+</body>
+</html>
